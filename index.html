@@ -6,11 +6,31 @@
 </head>
 <body>
   <header class="row">
+    <h1>Notes!</h1>
   </header>
   <main class="row">
+    <aside class="columns medium-4">
+      <textarea id="text"></textarea>
+<input type="color" id="example-color" value="#FF0000">        <br/>
+      <button class="button success">Create</button>
+    </aside>
+    <section class="columns medium-8" id="postits">
+
+    </section>
 
   </main>
   <footer>
   </footer>
+  <script type="text/javascript" src="dist/bundle.js"></script>
 </body>
+<script id="postit-template" type="text/template">
+  <section class="location columns medium-4 postit" style="background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,<%= color %>), color-stop(82%,<%= color %>), color-stop(82%,<%= color %>), color-stop(100%,#ffffc6)); border-top: <%= color %>">
+    <p>
+      <%= text %>
+    </p>
+    <p>
+      Postit!
+    </p>
+  </section>
+</script>
 </html>

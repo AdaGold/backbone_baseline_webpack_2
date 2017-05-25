@@ -1,2 +1,8 @@
+import './styles/foundation.scss';
+import './styles/style.css';
+import _ from 'underscore';
 
-console.log("testing");
+
+$(document).ready(function() {
+  console.log("Ready!");
+});
